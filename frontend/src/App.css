@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #252525;
+  color: #1e293b;
+}
+
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+p {
+
+  font-size: 17px;
+
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 0;
+  margin: 50px 0;
+  list-style: none;
+}
+
+li {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 34px;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px #0f172a0a;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li::before {
+  content: "🛍️";
+  font-size: 36px;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px #0f172a14;
+}
+
+button {
+
+  border: none;
+  background: #252525;
+  color: #e2e8f0;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 18px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #626263;
+}
+
+.buttonTrue {
+   padding: 10px 0 7px 0;
+  color: rgb(26, 145, 26);
+}
+
+.buttonFalse {
+  padding: 10px 0 7px 0;
+  color: rgb(153, 28, 28);
+}
+
+@media (max-width: 650px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
